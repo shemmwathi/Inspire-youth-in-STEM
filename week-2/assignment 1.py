@@ -8,4 +8,17 @@ for x in range (1,101,2):
 
 #write a program to list all the prime numbers from 1-100
 
-for 
+num=int(input("enter any positive number to check whether it is a prime number or not"))
+if num>1:
+    for s in range (2,101,num):
+        if(num % s) ==0:
+            print (num,"is not a prime number")
+
+
+
+
+
+
+
+
+
