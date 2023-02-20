@@ -21,16 +21,21 @@ myFavouriteMusicians.append(musician)
 
 print("My Favourite musicians are :",myFavouriteMusicians)
 
-select = myFavouriteMusicians.copy()
+celebs= myFavouriteMusicians.copy()
 
-print (select)
+print (celebs)
+
+print("--------------------------------------------")
 
 myFavouriteMusicians.sort()
 
 print (myFavouriteMusicians)
 
+print("-------------------------------------")
+
+
 myFavouriteMusicians.pop(1,3)
 
 print(myFavouriteMusicians)
 
-print(len(myFavouriteMusicians))
+print(len(musician))
