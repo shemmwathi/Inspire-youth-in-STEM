@@ -17,10 +17,10 @@ print (friends)
 
 print("-------------------------------------")
 
-New_friends = friends.copy
+new_friends = friends.copy()
 
-print (New_friends)
+print (new_friends)
 
 #New_friends.pop()
 
-print(friends.pop)
+print(friends.pop())

@@ -9,14 +9,30 @@
 
 #print gross income, net income
 
-income = str(input("Enter your taxable income :"))
-if income <= 100_000:
-    income1 = (income ) * 0.5
-elif 100_000 < income <= 150_000:
-    income2= (income - 100_000)* 0.16
-    print ("Your tax amount to be paid is :",income2)
-elif 150_000 < income <= 300_000:
-    income3 = ((income - 10_000)*0.19)
-if income > 300_000:
-    income4 = ((income - 300_000)*0.3)
-    print ("Your tax amount to be paid is :",income)
+gross_income = int(input("Enter your gross income :"))
+
+taxgroup_1 =(gross_income * 0.15)
+taxgroup_2 =(gross_income * 0.16)
+taxgroup_3 =(gross_income * 0.19)
+taxgropu_4 =(gross_income * 0.30)
+
+if gross_income <= 100000:
+    print("gross_income",gross_income)
+    print("tax:",taxgroup_1)
+    print("net_income:",gross_income - taxgroup_1)
+
+elif (gross_income(int>=100001)) & (gross_income< 150,000):
+    print("gross_income:",gross_income)
+    print("tax:",taxgroup_2)
+    print("net_income:",gross_income - taxgroup_2)
+
+elif (gross_income>=150001) & (gross_income<=300000):
+    print("gross_income:",gross_income)
+    print("tax:",taxgroup_3)
+    print("net_income:",gross_income - taxgroup_3)
+
+elif (gross_income>=300001):
+    print("gross_income:",gross_income)
+    print("tax:",taxgropu_4)
+    print("net_income:", gross_income - taxgropu_4)
+    
