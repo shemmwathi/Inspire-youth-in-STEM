@@ -15,11 +15,16 @@
 myFavouriteMusicians = []
 
 for i in range(6):
- musician = input(["Young Dolph", "Playboy Carti", "Key Glock" ,"Frank Ocean", "21 Savage", "J.cole ",])
+ myFavouriteMusicians.append("Young Dolph")
+ myFavouriteMusicians.append("Playboy Carti")
+ myFavouriteMusicians.append("Key Glock")
+ myFavouriteMusicians.append("Frank Ocean")
+ myFavouriteMusicians.append("21 Savage")
+ myFavouriteMusicians.append("J. cole")
 
-myFavouriteMusicians.append(musician)
-
-print("My Favourite musicians are :",myFavouriteMusicians)
+for musician in myFavouriteMusicians:
+   
+  print("My Favourite musicians are :",myFavouriteMusicians)
 
 celebs= myFavouriteMusicians.copy()
 
@@ -27,15 +32,15 @@ print (celebs)
 
 print("--------------------------------------------")
 
-myFavouriteMusicians.sort()
+celebs.sort()
 
-print (myFavouriteMusicians)
+print (celebs)
 
 print("-------------------------------------")
 
 
-myFavouriteMusicians.pop(1,3)
+celebs.pop()
 
-print(myFavouriteMusicians)
+print(celebs)
 
 print(len(musician))
