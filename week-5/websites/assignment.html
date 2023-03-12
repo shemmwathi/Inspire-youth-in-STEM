@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Age Checker</title>
+    <style>
+      body {
+        background-color: #f2d8c9;
+        font-family: 'Courier New', Courier, monospace;
+        color: #333333;
+        text-align: center;
+        padding: 50px;
+      }
+      h1 {
+        font-size: 36px;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ID Creator</h1>
+    <label for="name">Name:</label>
+    <input type="text" id="name"><br><br>
+    <label for="age">Age:</label>
+    <input type="text" id="age"><br><br>
+    <button onclick="checkAge()">Check Age</button>
+    <div id="result"></div>
+    
+    <script>
+      function checkAge() {
+        var name = document.getElementById("name").value;
+        var age = document.getElementById("age").value;
+        
+        if (age >= 18) {
+          document.getElementById("result").innerHTML = name + ", you can drive.";
+          document.getElementById("result").style.color = "#e08b6b";
+        } else {
+          document.getElementById("result").innerHTML = name + ", you are too young to drive.";
+          document.getElementById("result").style.color = "#e08b6b";
+        }
+      }
+    </script>
+  </body>
+</html>
