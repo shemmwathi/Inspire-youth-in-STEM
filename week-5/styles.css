@@ -1,0 +1,74 @@
+body {
+	background-color: #1a1a1a;
+	color: #fff;
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.header {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.header h1 {
+	font-size: 40px;
+}
+
+.artist-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+
+.artist {
+	flex-basis: 20%;
+	margin: 0 10px 20px;
+	text-align: center;
+}
+
+.artist img {
+	display: block;
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.artist h3 {
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+.player {
+	text-align: center;
+}
+
+.cover {
+	display: block;
+	margin: 0 auto 30px;
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+}
+
+.title {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.controls {
+	display: flex;
+	justify-content: center;
+}
+
+.play-pause {
+	background-color: #fff;
+	color: #000;
+	font-size: 20px;
+}

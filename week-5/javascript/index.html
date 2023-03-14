@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" href="style.css"
         <body>
+         <!--
             <h1 id= </h1>Java Script basics</h1>
               <h2 id="f_name"</h2>
               <h2 id="s_name"</21>
@@ -13,67 +14,48 @@
               <h1 id="sum_num"</h1>
               <h1 id="my_full_name"</h1>
              <h1 id="fruits"</h1>
-                <h1 id="msg"</h1>
-                
+                <h1 id="msg"</h1>-->
+              <h1>LOG IN SCREEN</h1>
+              <label for="Name">Name</label><br>
+              <input type="text"><br>
+              <label for="Age">Age</label><br>
+              <input id="age" type="int"><br>
+             <button id="confirm_btn">confirm</button>
+             <h2 id="get_in">you can get in</h2>
+
+            <h1 id="0">0</h1>
+             <button id="increase_btn">increase</button>
+             <button id="decrease_btn">decrease</button>
+             <button id="reset_btn">reset</button>
+             <button id="number"></button>
+
+
+
 
             
-             <script>
-                //variables in javascript
-                //number
-              var f_number= 12;
-              var s_number = 20;
+             <script src="/Users/shemmwathi/Documents/inspire-youth-in-STEM/week-5/websites/index.js">
+               var number=6;
+               number++;
+               document.getElementById("increase_btn").onclick = function increase_number(){
+               number ++;
+               console.log(number)
+               document.getElementById("number").value=number}
 
-              var sum_num=f_number +s_number
-              var division=f_number / s_number
-              var multiplication=f_number * s_number
-              var subtraction=f_number - s_number
-              var modulus=f_number % s_number
-
-              var n1,n2,n3,n4 //declare variables
-
-
-             //string
-             var my_first_name ="Shem"
-             var my_second_name ="Mwathi"
-             var  my_age ="19";
-             var weight="65kg"
-             var my_city="Nairobi"
+               var number=0;
+               document.getElementById("decrease_btn").onclick = function decrease_number(){
+               number --;
+               console.log(number)
+               document.getElementById("number").value=number}
+               
+               var number=0;
+               document.getElementById("increase_button").onclick = function reset_number(){
+               number <= 1;
+               console.log(number)
+               document.getElementById("number").value=number}
+               
+             </script>
              
-
-             var my_full_name=my_first_name +" " + my_second_name;
-             //Arithmetics
-             // + =addition -=subtraction *=multiplication /=division  %= modulus
-             
-
-             //Arrays
-             let fruits=["Banana" ,"Mangoes" ,"lime" , "Orange" , "Guava"]
-            
-             let my_fruit=fruits[4];
-             print(0)
-             my_fruit=fruits[fruits.length -1]
-
-             //condition
-             var msg=" "
-             if (age>=18) {
-                msg="you cannot drive";
-                
-             } else {
-                msg="you can drive"
-             } 
-             
-
-             document.getElementById("msg").innerHTML=msg;
-             document.getElementById("my_full_name").innerHTML=my_full_name;
-             document.getElementById("s_name").innerHTML=my_second_name;
-             document.getElementById("age").innerHTML=my_age;
-             document.getElementById("weight").innerHTML=weight;
-             document.getElementById("f_number").innerHTML=f_number;
-             document.getElementById("s_number").innerHTML=s_number;
-             document.getElementById("sum_num").innerHTML=sum_num;
-             document.getElementById("fruits").innerHTML=my_fruit;
-
-           </script>
-         <br> <button>CLICK ME </button>
+    
         </body>
     </head>
 </html>

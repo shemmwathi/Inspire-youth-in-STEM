@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Kenyan Playlist</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		.header {
+		background-image:url(images/deer_iphone6__png\ by\ Nukul\ _\ NextDesigns.png) ;
+			height: 100px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0 20px;
+      font-family:unset;
+
+		}
+
+		.logo {
+			font-size: 32px;
+			color: #ece2e2; /* white */
+			font-weight: bold;
+		}
+
+		.navigation {
+			display: contents;
+			align-items:self-end;
+		}
+
+		.navigation li {
+			margin: 0 10px;
+			list-style: none;
+			font-size: 20px;
+			color: #FFFFFF; /* white */
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			transition: color 0.2s ease-in-out;
+			cursor: pointer;
+      display: inline-block;
+		}
+
+		.navigation li:hover {
+			color: #FFD700; /* Kenyan flag red */
+		}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<div class="logo">
+			My Kenyan playlist
+		</div>
+		<nav class="navigation">
+			<ul>
+				<li>more</li>
+				<li> handles</li>
+				<li>Home</li>
+			</ul>
+		</nav>
+	</header>
+  <head>
+    <title>My African Themed Music Player</title>
+    <style>
+      body {
+        background-image: url('/Users/shemmwathi/Documents/inspire-youth-in-STEM/week-5/websites/images/KICC Building Views from Central Park Nairobi, Kenya at sunset.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      
+      .container {
+        display:contents;
+        flex-wrap: wrap;
+        justify-content:start;
+        align-items:flex-start;
+        height: 100vh;
+      }
+      
+      .song {
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid rgb(227, 25, 25);
+        border-radius: 10px;
+        background-color: rgb(10, 2, 2);
+        text-align: center;
+      }
+      
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+      
+      button {
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 10px;
+        background-color: rgb(188, 167, 167);
+        color: white;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: #555;
+      }
+    </style>
+      <title>Music Player</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          background-color: #932121;
+          color: #FFD700;
+        }
+        h1 {
+          margin-top: 50px;
+        }
+        img {
+          width: 200px;
+          height: 200px;
+          margin-top: 20px;
+          border-radius: 50%;
+          box-shadow: 0px 0px 10px 2px rgba(12, 11, 11, 0.2);
+        }
+        audio {
+          margin-top: 20px;
+        }
+        button {
+          font-size: 20px;
+          padding: 10px 20px;
+          margin: 10px;
+          background-color: #010201;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+          cursor: pointer;
+        }
+        button:hover {
+          background-color: #0a0e0a;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+      </style>
+    </head>
+    <body>
+      <img src="images/music logo.jpeg" width="100">
+    <h1>Music Player
+      </h1>
+      <img src="images/maxresdefault-1-1.jpeg" alt="Artist Image">
+      <br><h1>1</h1> Name:Sauti Sol<br>
+      Song:Mbwe Mbwe <br>
+      <audio id="audio1" src="images/bien_x_aaron_rimbui_mbwe_mbwe_official_music_video_mp3_63896.mp3"></audio>
+      <button onclick="playAudio(1)">Play</button>
+      <button onclick="stopAudio(1)">Stop </button><br>
+      <img src="images/juanita.jpeg" alt="Artist Image">
+      <br><h1>2</h1>  Name: Juanita<br>
+      <br> Song:Everybody<br>
+      <audio id="audio2" src="images/y2mate.com - Juanita  Everybody lyrics.mp3"></audio>
+      <button onclick="playAudio(2)">Play </button>
+      <button onclick="stopAudio(2)">Stop </button><br>
+      <img src="images/wakadinali.jpeg" alt="Artist Image">
+      <br><h1>3</h1>  Name:Wakadinali<br>
+      <br> Song:Nyara nyara nyara<br>
+      <audio id="audio3" src="images/wakadinali_nyaranyara_lyrics_mp3_62497.mp3"></audio>
+      <button onclick="playAudio(3)">Play </button>
+      <button onclick="stopAudio(3)">Stop </button><br>
+      <img src="images/angry panda.jpeg" alt="Artist Image">
+      <br><h1>4</h1>  Name: Angry panda  <br>
+      <br> Song:Tapo<br>
+      <audio id="audio4" src="images/angry_panda_clan_tapo_official_music_video_mp3_62535.mp3"></audio>
+      <button onclick="playAudio(4)">Play </button>
+      <button onclick="stopAudio(4)">Stop </button><br>
+      <img src="images/Burk.jpeg" alt="Artist Image">
+      <br><h1>5 </h1>  Name: Bruklyne boyz<br>
+      <br> Song:Zoza<br>
+      <audio id="audio5" src="images/zoza_lil_maina_x_buruklyn_boyz_mp3_64046.mp3"></audio>
+      <button onclick="playAudio(5)">Play </button>
+      <button onclick="stopAudio(5)">Stop </button> <br>
+      <script>
+        function playAudio(index) {
+          var audio = document.getElementById("audio" + index);
+          audio.play();
+        }
+    
+        function stopAudio(index) {
+          var audio = document.getElementById("audio" + index);
+          audio.pause();
+          audio.currentTime = 0;
+        }
+      </script>
+    </body>
+    </html>
+    
